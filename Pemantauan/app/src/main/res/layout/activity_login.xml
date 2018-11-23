@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_yayasan"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/nis"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORM LOGIN SLB C Sukapura"
+        android:layout_above="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nis"
+        android:hint="Masukan NIS"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/nis"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/password"
+        android:hint="Masukkan Password "
+        android:gravity="center"/>
+
+    <Button
+        android:text="LogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Login" />
+
+</RelativeLayout>
